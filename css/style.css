@@ -1,0 +1,497 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+:root{
+    --main-bg:#F7F7F7;
+    --main-font: "Poppins";
+    --sub-font: "Montserrat" ;
+}
+.absolute{
+    position: absolute;
+    background-color: transparent;
+}
+.fixed{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+
+    .nav-link , .navbar-brand , .navbar-nav .nav-link.active{
+        color: black;
+    }
+    .navbar-nav .nav-link.active::before , .navbar-expand-lg .navbar-nav .nav-link::after{
+        background-color: black;
+    }
+    .navbar-toggler-icon{
+        background-image: url(../images/menubuttonofthreelines_79781.png);
+    }
+}
+
+.navbar-expand-lg{
+    z-index: 999;
+    transition: all 0.5s ease;
+}
+.navbar-brand{
+    font-size: 22px;
+    font-weight: 800; 
+    font-family:var(--sub-font);
+    letter-spacing: 1.5px;
+}
+.navbar-nav .nav-link.active{
+    position: relative;
+}
+.navbar-nav .nav-link.active::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    bottom: 2px;
+    left: 9px;
+}
+.navbar-expand-lg .navbar-nav .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    bottom: 2px;
+    left: 9px;
+    transition: all 0.5s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::after{
+     width: 70%;
+}
+.nav-link{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    font-family: var(--main-font) ;
+    position: relative;
+}
+#home{
+    background: linear-gradient(to right , #000000b0, #00000091 ) , url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+#home h1{
+    font-family: var(--sub-font);
+    font-size: 74px;
+    font-weight: 800;   
+}
+#home .caption p{
+    font-size:60px;
+    font-weight: 200;
+}
+#home .caption span{
+    font-size: 60px;
+}
+.border{
+    border: 2px solid transparent !important;
+    background-color: black;
+    border-radius: 100%;
+    padding: 10px;
+}
+#home .icons i{
+    font-size: 15px;
+}
+#about .row .col-md-5 .image::before{
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    width: 80%;
+    height: 85%;
+    bottom: -20px;
+    z-index: -1;
+}
+#about .row .col-md-7 .progress{
+    margin-bottom: 20px;
+    height: 24px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--sub-font);
+}
+#about .row .col-md-7 .progress p{
+    color: white;
+} 
+#about .row .col-md-7 h2{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: var(--sub-font);
+    color: #343434;
+}
+#about .row .col-md-7 .sp{
+    font-family: var(--main-font);
+    color: #999999;
+}
+#about .row .col-md-7 p{
+    color: #748182;
+    font-size: 15px;
+    font-family: var(--main-font);
+    line-height: 1.8;
+    padding-top: 15px;
+}
+#about .row .col-md-7 p span{
+    color: #748182;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: var(--main-font);
+}
+.progress-bar{
+    background-color: black;
+    transition: width 0.3s linear;
+}
+#about .btns button{
+    padding: 8px;
+    border-radius: 4px;
+    border-color: rgba(16, 16, 16, 0.89);
+    font-family: var(--main-font);
+    font-size: 14px;
+}
+#about .btns .btn1 button{
+    background-color: black;
+    color: white;
+}
+#about .btns .btn2 button{
+    background-color: white;
+}
+#about .btns .btn1:hover button{
+    background-color: white;
+    color: black;
+    transition: all 1s;
+}
+#about .btns .btn2:hover button{
+    background-color: black;
+    color: white;
+    transition: all 1s;
+}
+
+
+#services , #clients , #team{
+    background-color: var(--main-bg);
+}
+#services h2 , #works h2 , #clients h2 , #team h2 , #contact h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color:rgb(52, 52, 52);
+    font-family: var(--sub-font);
+}
+#services h2::before , #works h2::before , #team h2::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 200px;
+    height: 10%;
+    top: 58%;
+    z-index: -1;
+}
+#services .br{
+    border: 1px solid transparent;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background-color: var(--main-bg);
+}
+#services .card:hover .br{
+    background-color: black;
+    transition: all 1s;
+}
+#services .card i{
+   font-size: 25px;
+   padding-top: 15px;
+   color: #2e2e2e;
+}
+#services .card:hover i{
+    color: white;
+    transition: all 1s;
+}
+#services .row{
+    margin: auto;
+}
+#services .card-title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    color:rgb(52, 52, 52);
+    font-family: var(--sub-font);
+}
+#services .card-text{
+   color:rgb(116, 129, 130);
+
+}
+#services .card{
+    padding: 30px 20px;
+    box-shadow: 0 0 10px -7px rgba(27, 27, 27, 0.452);
+    border: none;
+}
+
+#works .nav-link{
+    font-size: 16px;
+    font-weight: 800;
+    color:rgb(52, 52, 52);
+    font-family: var(--main-font);
+}
+#works .image img{
+    width: 100%;
+}
+#works .image{
+    width: 30%;
+}
+#works .image{
+    position: relative;
+    margin: 15px;
+}
+#works .image .overlay{
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    right: 0px;
+    bottom: 0px;
+    width: 96%;
+    height: 95%;
+    background-color: #ffffffeb;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(18px);
+}
+#works .image .overlay .info p{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1;
+    font-family: var(--sub-font);
+}
+#works .image .overlay a{
+    color: white;
+}
+#works .image .overlay .border{
+    padding: 8px;
+    margin-right: 5px;
+}
+#works .image .overlay .border i{
+    font-size: 12px;
+}
+#works .image .overlay:hover{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.9s;
+}
+#works .image .border:hover , #team .border:hover{
+    background-color: transparent;
+    border-color: black !important;
+}
+#works .image .border:hover i , #team .border:hover i{
+    color: black !important;
+}
+#works .nav-item{
+    font-weight: 700;
+    font-family: var(--main-font);
+}
+
+
+#clients{
+    min-height: 70vh;
+}
+#clients h2::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 295px;
+    height: 10%;
+    top: 58%;
+    z-index: -1;
+}
+#carouselExampleInterval{
+    width: 70%;
+    right: -200px;
+}
+#carouselExampleInterval span{
+    font-size: 26px;
+    font-weight: 600;
+}
+#carouselExampleInterval p{
+    font-size: 24px;
+    font-weight: 300;
+}
+#carouselExampleInterval img{
+    width: 8%;
+    margin: auto;
+}
+#clients .carousel-item p{
+    font-size: 15px;
+    font-family: var(--main-font);
+    color: rgb(116, 129, 130);
+}
+#clients .carousel-item span{
+    font-family: var(--sub-font);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+}
+.carousel-indicators [data-bs-target]{
+    background-color: rgb(116, 129, 130);
+}
+#clients .spans .sp{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(116, 129, 130);
+}
+
+.section .part i{
+     font-size: 30px;
+     padding-block: 20px;
+}
+.section .part span{
+    font-family: var(--sub-font);
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(52, 52, 52);
+    padding-bottom: 10px;
+}
+.section .part p{
+    font-family: var(--main-font);
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(116, 129, 130);
+}
+
+#team .card-body{
+    background-color: #5B5B5B;
+}
+#team .card-body span{
+    font-family: var(--sub-font);
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+#team .card-body p{
+    font-family: var(--sub-font);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 10px;
+}
+#team .image{
+    position: relative;
+    overflow: hidden;
+}
+#team .OL{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 0px;
+    bottom: 0px;
+    width: 97%;
+    height: 78%;
+    background-color: #ffffffeb;
+    align-items: center;
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+#team .OL .border{
+    width: 40px;
+}
+#team .OL .border i{
+    color: white;
+}
+#team .card:hover .OL{
+    opacity: 1;
+    transform: rotateY(0);
+    transition: all 1s;
+}
+#team .card-image:hover img{
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+#contact h2::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 245px;
+    height: 10%;
+    top: 58%;
+    z-index: -1;
+}
+#contact .border{
+    width: 55px;
+    background-color: #efefef;
+    padding: 15px;
+}
+#contact .col-md-4:hover .border{
+    background-color: black;
+    transition: all 0.7s;
+}
+#contact .border i{
+    color: #343434;
+    font-size: 25px;
+}
+#contact .col-md-4:hover i{
+    color: white;
+    transition: all 0.7s;
+}
+#contact span{
+    font-family: var(--sub-font);
+    color: #343434;
+    font-size: 16px;
+    font-weight: 700;
+    padding-block: 10px;
+}
+#contact p{
+    font-family: var(--main-font);
+    font-size: 15px;
+    color: rgb(116, 129, 130);
+}
+#contact input{
+    width: calc(100% / 2 - 15px);
+    height: 40px;
+    background-color: var(--main-bg);
+    font-family: var(--main-font);
+    font-size: 14px;
+    padding-left: 10px;
+    border: none;
+    outline-color: transparent;
+}
+#contact textarea{
+    background-color: var(--main-bg);
+    font-family: var(--main-font);
+    font-size: 14px;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    outline: transparent;
+}
+#contact form button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border:1px solid transparent;
+    width: 128px;
+    padding: 10px;
+    font-family: var(--main-font);
+    font-size: 14px;
+}
+#contact form button:hover{
+    background-color: transparent;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.lastPart{
+    background-color: #1C1C1C;
+    color: rgb(116, 129, 130);
+    font-size: 13px;
+
+}

@@ -1,0 +1,71 @@
+@media all and (max-width: 768px) {
+    #home h1{
+        font-size: 57px;
+    }
+    #home .caption p{
+        font-size:40px;
+    }
+    #home .caption span{
+        font-size: 40px;
+    }
+    .navbar-nav{
+        background-color: white;
+    }
+    .nav-item a{
+        text-align: center;
+        color: black !important;
+    }
+    
+    #about .row .col-md-7 h2{
+        padding-top: 50px;
+    }
+    #services .card{
+        margin-block: 15px;
+        margin-right: 40px;
+    }
+    #home-tab-pane .image ,#profile-tab-pane .image, #contact-tab-pane .image, #messages-tab-pane .image{
+        width: 100%;
+    }
+    #clients #carouselExampleInterval{
+        right: -60px;
+    }
+    #clients #carouselExampleInterval img{
+        width: 30%;
+    }
+    .section .container{
+        flex-direction: column;
+    }
+    #team .OL{
+        height: 75%;
+    }
+    .navbar-nav .nav-link.active::before{
+        width: 20%;
+        left: 180px;
+    }
+}
+@media all and (min-width: 767px) and (max-width: 992px) {
+    #services .card{
+       width: 100% !important;
+    }
+    #clients #carouselExampleInterval{
+        right: -90px;
+    }
+    #clients #carouselExampleInterval img{
+        width: 30%;
+    }
+    .section .container{
+        flex-direction: column;
+    }
+    #works .image{
+        width: 45.5%;
+    }
+    #team .OL{
+        height: 74%;
+    }
+    #team .card{
+        width: 48% !important;
+     }
+    .navbar-nav .nav-link.active::before{
+        width: 60%;
+    }
+}
