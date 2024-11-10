@@ -42,6 +42,9 @@
         width: 20%;
         left: 180px;
     }
+    #contact .container{
+        width: 100% !important;
+    }
 }
 @media all and (min-width: 767px) and (max-width: 992px) {
     #services .card{
